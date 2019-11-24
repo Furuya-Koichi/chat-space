@@ -3,18 +3,27 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many :posts
+- has_many :mesaages
 
-## postsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-||image|text||
-|text|text||
+|body|text|
+|image|string|
+|group|references|null: false, foreign_key: true|
 |user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+### Association
+- has_many :users,through:groups_users
+- has_many masseges
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -23,4 +32,4 @@
 |group|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
-- belongs_to :user
+- belongs_to :user　
