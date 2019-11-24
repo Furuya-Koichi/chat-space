@@ -6,7 +6,7 @@
 |name|string|null: false|
 ### Association
 - has_many :mesaages
-
+- has_many :groups
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -16,7 +16,7 @@
 |user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-
+- belongs_to :groups
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
