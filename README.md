@@ -17,8 +17,10 @@
 |group|references|null: false, foreign_key: true|
 |user|references|null: false, foreign_key: true|
 ### Association
+- has_many :groups_users
 - belongs_to :user
 - belongs_to :group
+
 
 ## groupsテーブル
 |Column|Type|Options|
