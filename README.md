@@ -14,8 +14,6 @@
 |------|----|-------|
 |body|text|
 |image|string|
-|group|references|null: false, foreign_key: true|
-|user|references|null: false, foreign_key: true|
 ### Association
 - has_many :groups_users
 - belongs_to :user
@@ -28,6 +26,7 @@
 |name|string|null: false|
 ### Association
 - has_many :users,through::groups_users
+- has_many :groups_users
 - has_many messeges
 
 ## groups_usersテーブル
