@@ -1,10 +1,8 @@
 .chat-main{
   width: calc(100vw - 300px);
   float: left;
-}
 
-
- .chat-main__bar{
+ &__bar{
    width: calc(100vw - 300px);
    height: 100px;
    background-color: #d2d2d2;
@@ -12,10 +10,10 @@
    justify-content: space-between;
    float: right;
    text-align: center;
- }
+ 
 
 
-  .chat-main__bar-left{
+  &__bar-left{
     padding: 0px 40px;
   }
    .group-title{
@@ -29,28 +27,26 @@
      padding: 0px 10px 40px;
     }
 
-  .chat-main__bar-EDIT{
+  &__bar-EDIT{
     padding: 0px 20px;
   }
    .edit{
-     padding: 28px 40px 15px 0px;
+     padding: 28px 40px 15px 40px;
      line-height: 40px;
      }
+ }
 
-
- .chat-main__message-list{
+ &__message-list{
    width: calc(100vw - 300px);
    height: calc(100vh - 190px);
    background-color: #fafafa;
    clear: both;
-  }
+  
    .message-zone{
     padding: 35px 40px;
     clear: both;
    }
-    .message{
-      
-    }
+  
      .user-name{ 
      color:#333333;
      font-size: 16px;
@@ -69,7 +65,7 @@
       font-size: 14px;
       padding: 0px 0px 46px
     }
-
+  }
      
      
 .message-form{
@@ -84,7 +80,7 @@
     display: none;
    }
    
-}
+
  
   .form{
     position: absolute;
@@ -118,5 +114,6 @@
   right: 40px;
   text-align: center;
   background-color: skyblue;
-
- }
+  }
+ }  
+}
