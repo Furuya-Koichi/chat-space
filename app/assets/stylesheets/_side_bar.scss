@@ -1,8 +1,8 @@
-.side_bar{
+.side-bar{
 float: left;
 height: 100vh;
 }
- .side_bar_group_list{
+ .side-bar__group-list{
   width: 300px;
   height: 100px;
   background-color: #253141;
@@ -11,7 +11,7 @@ height: 100vh;
   align-items: center;
   
  }
-   .top_items{
+   .top-items{
     background-color: #253141;
     width: 220px;
     height: 20px;
@@ -19,7 +19,7 @@ height: 100vh;
     justify-content: space-around;
    }
 
-    .top_items_name{
+    .top-items__name{
      position: relative;
      top: 50%;
      -webkit-transform: translateY(-50%); 
@@ -27,7 +27,7 @@ height: 100vh;
      color: #ffffff;
      font-size: 16px;
      }
-    .top_items_icon{
+    .top-items__icon{
      width: 60px;
      display: flex;
      justify-content: flex-end;
@@ -43,19 +43,19 @@ height: 100vh;
        padding: 0px 0px 0px 0px;
       }
      }
- .side_bar_user_name{
+ .side-bar__user-name{
    width: 300px;
    height: calc(100vh - 100px);
    background-color: #2f3e51;
  
  }
 
-  .group_name{
+  .group-name{
    color: #ffffff;
    font-size: 15px;
    padding: 20px 0px 5px 20px;
   }
-  .text{
+  .group-text{
     color: #ffffff;
     font-size: 11px;
     padding: 0px 0px 40px 20px;

@@ -1,39 +1,39 @@
-.chat_main
- .chat_main_bar
-  .chat-main_bar_left
-   .group_title
+.chat-main
+ .chat-main__bar
+  .chat-main__bar-left
+   .group-title
     test
     .user
      Member : masa
-  .chat-main_bar_EDIT
+  .chat-main__bar-EDIT
    .edit
    = link_to "#", class: "chat_main_icon__btn" do
     EDIT
- .chat_main_message_list
-  .message_zone
+ .chat-main__message-list
+  .message-zone
    .message
-    .user_name
+    .user-name
      masa
-     .date_time
+     .date-time
       2019/11/20(wed)17:40:01
     .comment
      おはよう
-    .user_name
+    .user-name
      masa
-     .date_time
+     .date-time
       2019/11/20(wed)17:40:01
     .comment
      今日から雨
- .message_form
-  .chat_main_message_form
+ .message-form
+  .chat-main__message-form
    .form
-    .type_a_message
+    .type-a-message
      type a message
-    .image_btn
+    .image-btn
      %label{class: "input-box__image"}
       = icon('fas', 'image')
       %input{type: "file"}
    
-  .send_btn
+  .send-btn
    = link_to "#", class: "message_send__btn" do
     send

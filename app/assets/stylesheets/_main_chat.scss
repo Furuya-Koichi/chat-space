@@ -1,10 +1,10 @@
-.chat_main{
+.chat-main{
   width: calc(100vw - 300px);
   float: left;
 }
 
 
- .chat_main_bar{
+ .chat-main__bar{
    width: calc(100vw - 300px);
    height: 100px;
    background-color: #d2d2d2;
@@ -15,10 +15,10 @@
  }
 
 
-  .chat_main_bar_left{
+  .chat-main__bar-left{
     padding: 0px 40px;
   }
-   .group_title{
+   .group-title{
      color: #333333;
      font-size: 20px;
      padding: 35px  15px;
@@ -29,7 +29,7 @@
      padding: 0px 10px 40px;
     }
 
-  .chat-main_bar_EDIT{
+  .chat-main__bar-EDIT{
     padding: 0px 20px;
   }
    .edit{
@@ -38,20 +38,20 @@
      }
 
 
- .chat_main_message_list{
+ .chat-main__message-list{
    width: calc(100vw - 300px);
    height: calc(100vh - 190px);
    background-color: #fafafa;
    clear: both;
   }
-   .message_zone{
+   .message-zone{
     padding: 35px 40px;
     clear: both;
    }
     .message{
       
     }
-     .user_name{ 
+     .user-name{ 
      color:#333333;
      font-size: 16px;
      display: flex;
@@ -59,7 +59,7 @@
 
      }
   
-      .date_time{
+      .date-time{
         color:#999999;
         font-size: 12px;
       }
@@ -72,7 +72,7 @@
 
      
      
-.message_form{
+.message-form{
    position: relative;
    width: calc(100vW - 300px);
    height: 90px;
@@ -100,17 +100,17 @@
     
     
    }
-   .type_a_message{
+   .type-a-message{
     padding: 0 15px 0px 0px;
    
    }
-   .image_btn{
+   .image-btn{
    position: absolute;
    padding: 0 15px 0px 0px;
    left: 700px
   
   }
-.send_btn{
+.send-btn{
   position: absolute;
   width: 100px;
   height: 50px;
