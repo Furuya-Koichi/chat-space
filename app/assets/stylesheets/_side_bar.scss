@@ -17,9 +17,9 @@ height: 100vh;
     height: 20px;
     display: flex;
     justify-content: space-around;
-   }
+   
 
-    .top-items__name{
+    &__name{
      position: relative;
      top: 50%;
      -webkit-transform: translateY(-50%); 
@@ -27,7 +27,7 @@ height: 100vh;
      color: #ffffff;
      font-size: 16px;
      }
-    .top-items__icon{
+    &__icon{
      width: 60px;
      display: flex;
      justify-content: flex-end;
@@ -42,7 +42,8 @@ height: 100vh;
        color:#ffffff;
        padding: 0px 0px 0px 0px;
       }
-     }
+    }
+   }
   }
  &__user-name{
    width: 300px;
