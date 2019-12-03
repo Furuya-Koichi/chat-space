@@ -2,12 +2,12 @@
  .side-bar__group-list
   .top-items
    .top-items__name
-    MASA
+    = current_user.name
    .top-items__icon
    = link_to "#", class: "top-items__icon__btn" do
     = icon('fas',"edit")
-   = link_to "#", class: "top-items__icon__btn_2" do
-    = icon('fas', 'cog')
+   = link_to edit_user_path(current_user) do
+    = icon('fas', 'cog', class: 'top-items__icon__btn_2')
  .side-bar__user-name
   .group-name
    techcamp
