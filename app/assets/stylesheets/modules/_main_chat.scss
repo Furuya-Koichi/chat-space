@@ -19,7 +19,7 @@
    .group-title{
      color: #333333;
      font-size: 20px;
-     padding: 35px  15px;
+     padding: 28px 40px 15px 40px;
    }
    .user{
      color: #999999;
@@ -35,39 +35,15 @@
      line-height: 40px;
      }
  }
-
- &__message-list{
+&__message-list{
    width: calc(100vw - 300px);
    height: calc(100vh - 190px);
    background-color: #fafafa;
-   clear: both;
-  
-   .message-zone{
-    padding: 35px 40px;
-    clear: both;
-   }
-  
-     .user-name{ 
-     color:#333333;
-     font-size: 16px;
-     display: flex;
-     justify-content: flex-start;
+   overflow: scroll;
 
-     }
-  
-      .date-time{
-        color:#999999;
-        font-size: 12px;
-      }
-   
-     .comment{
-      color:#434A54;
-      font-size: 14px;
-      padding: 0px 0px 46px
-    }
   }
      
-     
+
 .message-form{
    position: relative;
    width: calc(100vW - 300px);
@@ -76,44 +52,39 @@
    display: flex;
    justify-content: space-between;
    line-height: 50px;
-   input{
+   input[type="file"]{
     display: none;
    }
    
-
- 
   .form{
     position: absolute;
+   
     display: flex;
     justify-content: space-between;
     width: 700px;
     height: 50px;
     background-color: whitesmoke;
     padding: 0px 40px;
+    bottom: 0;
     top: 15px;
     left: 40px
-   
-    
     
    }
-   .type-a-message{
-    padding: 0 15px 0px 0px;
    
-   }
+   
    .image-btn{
    position: absolute;
-   padding: 0 15px 0px 0px;
-   left: 700px
-  
+   left: 650px
   }
-.send-btn{
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  top: 15px;
-  right: 40px;
-  text-align: center;
-  background-color: skyblue;
+ 
+
+ .send-btn{
+   position: absolute;
+   width: 100px;
+   height: 50px;
+   text-align: center;
+   background-color: skyblue;
+   left:800px;
   }
- }  
+}
 }
