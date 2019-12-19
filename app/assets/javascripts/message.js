@@ -4,45 +4,45 @@ $(function(){
   if (message.content && message.image) {
       var html = ` <div class="message" data-message-id="${message.id}">
                     <div class="chat-main__message">
-                    <div class="user-name">
-                    ${message.user_name}
-                    </div>
-                    <div class="date-time">
-                    ${message.created_at}
-                    </div>
-                    <div class="comment"></div>
-                    <p class="lower-message__content">
-                    ${message.content}
-                    </p>
-                    <img class="image-btn" src=${message.image} >
-                    </div>
+                      <div class="user-name">
+                      ${message.user_name}
+                      </div>
+                      <div class="date-time">
+                      ${message.created_at}
+                      </div>
+                      <div class="comment"></div>
+                      <p class="lower-message__content">
+                      ${message.content}
+                      </p>
+                      <img class="image-btn" src=${message.image} >
+                      </div>
                     </div>`
       } else if(message.content) {
-    var html = ` <div class="message" data-message-id="${message.id}">
-                  <div class="chat-main__message">
-                  <div class="user-name">
-                  ${message.user_name}
-                  </div>
-                  <div class="date-time">
-                  ${message.created_at}
-                  </div>
-                  <div class="comment"></div>
-                  <p class="lower-message__content">
-                  ${message.content}
-                  </p>
-                  </div>
-                  </div>`
+      var html = ` <div class="message" data-message-id="${message.id}">
+                      <div class="chat-main__message">
+                      <div class="user-name">
+                      ${message.user_name}
+                      </div>
+                      <div class="date-time">
+                      ${message.created_at}
+                      </div>
+                      <div class="comment"></div>
+                      <p class="lower-message__content">
+                      ${message.content}
+                      </p>
+                      </div>
+                    </div>`
       } else if (message.image){
-     var html = ` <div class="message" data-message-id="${message.id}">
-                  <div class="chat-main__message">
-                  <div class="user-name">
-                  ${message.user_name}
-                  </div>
-                  <div class="date-time">
-                  ${message.created_at}
-                  </div>
-                  <img class="image-btn" src=${message.image} >
-                  </div>
+      var html = ` <div class="message" data-message-id="${message.id}">
+                      <div class="chat-main__message">
+                      <div class="user-name">
+                      ${message.user_name}
+                      </div>
+                      <div class="date-time">
+                      ${message.created_at}
+                      </div>
+                      <img class="image-btn" src=${message.image} >
+                      </div>
                   </div>`
               };
     return html
@@ -74,7 +74,6 @@ $(function(){
   var reloadMessages = function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     last_message_id = $('.message:last').data('message-id')
-    console.log(last_message_id)
     $.ajax({
       //ルーティングで設定した通りのURLを指定
       url: "api/messages",
@@ -85,7 +84,6 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
-      console.log(messages)
       //追加するHTMLの入れ物を作る
       var insertHTML = '';
       //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
@@ -97,11 +95,11 @@ $(function(){
       $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
     })
     .fail(function() {
-      console.log('error');
+      console.log('alert');
     });
   };
   setInterval(reloadMessages, 7000);
-  
+
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
