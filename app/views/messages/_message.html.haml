@@ -1,4 +1,4 @@
-.message
+.message{"data-message-id": "#{message.id}"}
   .chat-main__message
     .user-name
       = message.user.name
@@ -9,3 +9,4 @@
       %p.lower-message__content
         = message.content
     = image_tag message.image.url, class: 'image-btn' if message.image.present?
+
