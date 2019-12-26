@@ -4,10 +4,10 @@
    .group-title
     =@group.name
    .user
+    Member : 
     -@group.users.each do |user|
      =user.name
   .chat-main__bar-EDIT
-   .edit
    = link_to edit_group_path(@group), class: "chat_main_icon__btn" do
     EDIT
  .chat-main__message-list

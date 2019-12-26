@@ -3,13 +3,13 @@
   float: left;
 
  &__bar{
-   width: calc(100vw - 300px);
-   height: 100px;
-   background-color: #d2d2d2;
-   display: flex;
-   justify-content: space-between;
-   float: right;
-   text-align: center;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+  overflow: scroll;
+  
  
 
 
@@ -22,24 +22,31 @@
      padding: 28px 40px 15px 40px;
    }
    .user{
-     color: #999999;
-     font-size: 12px;
-     padding: 0px 10px 40px;
+    display: flex;
+    font-size: 12px;
+    color: #999999;
     }
 
-  &__bar-EDIT{
-    padding: 0px 20px;
-  }
-   .edit{
-     padding: 28px 40px 15px 40px;
-     line-height: 40px;
+  .chat_main_icon__btn{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    border: solid 1px #38aef0;
+    position: absolute;
+    right: 40px;
+    color: #38aef0;
      }
  }
 &__message-list{
    width: calc(100vw - 300px);
    height: calc(100vh - 190px);
+   padding: 46px 40px;
    background-color: #fafafa;
    overflow: scroll;
+   .message{
+    padding-bottom: 40px;
+   }
   }
      
 
@@ -54,20 +61,20 @@
    input[type="file"]{
     display: none;
    }
-   
   .form{
     position: absolute;
-   
     display: flex;
     justify-content: space-between;
     width: 700px;
     height: 50px;
     background-color: whitesmoke;
-    padding: 0px 40px;
+    //padding: 0px 40px;
     bottom: 0;
     top: 15px;
-    left: 40px
-    
+    left: 40px;
+    input[type="text"]{
+      width: 100%;
+     }
    }
    
    
@@ -84,6 +91,7 @@
    text-align: center;
    background-color: skyblue;
    left:800px;
+   color: whitesmoke;;
   }
 }
 }
